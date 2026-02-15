@@ -1,10 +1,10 @@
 import { invoke } from "@tauri-apps/api/core";
-import { useEffect, useState } from "react";
+import { Activity, List, Scan } from "lucide-react";
+import { useCallback, useEffect, useState } from "react";
 import { Dashboard } from "./components/Dashboard";
 import { RuleList } from "./components/RuleList";
 import { SessionScorer } from "./components/SessionScorer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/Tabs";
-import { Activity, List, Scan } from "lucide-react";
 
 interface Rule {
   id: string;
@@ -19,18 +19,18 @@ function App() {
   const [rules, setRules] = useState<Rule[]>([]);
   const [activeTab, setActiveTab] = useState("dashboard");
 
-  useEffect(() => {
-    loadRules();
-  }, []);
-
-  const loadRules = async () => {
+  const loadRules = useCallback(async () => {
     try {
       const rulesData = await invoke<Rule[]>("get_rules");
       setRules(rulesData);
     } catch (error) {
       console.error("Failed to load rules:", error);
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    void loadRules();
+  }, [loadRules]);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
@@ -40,9 +40,7 @@ function App() {
             <h1 className="text-xl font-bold text-slate-900">Data Behavior Dashboard</h1>
             <p className="text-sm text-slate-500">Track adherence to operating rules</p>
           </div>
-          <div className="text-sm text-slate-400">
-            v0.1.0
-          </div>
+          <div className="text-sm text-slate-400">v0.1.0</div>
         </div>
       </header>
 
@@ -64,7 +62,7 @@ function App() {
           </TabsList>
 
           <TabsContent value="dashboard">
-            <Dashboard />
+            <Dashboard onGoToScore={() => setActiveTab("score")} />
           </TabsContent>
 
           <TabsContent value="rules">

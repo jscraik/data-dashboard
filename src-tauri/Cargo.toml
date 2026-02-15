@@ -5,6 +5,8 @@ description = "Data Behavior Dashboard - Tracks AI agent adherence to operating 
 authors = ["Jamie Scott Craik"]
 edition = "2021"
 rust-version = "1.70"
+default-run = "data-behavior-dashboard"
+build = "build.rs"
 
 [dependencies]
 tauri = { version = "2", features = [] }
@@ -24,6 +26,9 @@ sqlx = { version = "0.8", features = ["runtime-tokio", "sqlite", "chrono", "migr
 # GOLD: Type-safe bridge
 tauri-specta = { version = "2.0.0-rc.21", features = ["derive", "typescript"] }
 specta = { version = "2.0.0-rc.21", features = ["chrono", "serde", "serde_json"] }
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
 
 [[bin]]
 name = "behavior-scorer"

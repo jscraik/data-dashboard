@@ -1,9 +1,6 @@
-mod lib;
-
-use lib::{BehaviorScorer, SessionScore, TrackerConfig, RuleDefinition, RuleCategory};
-use tauri::{Manager, State};
+use data_behavior_dashboard_lib::{BehaviorScorer, RuleCategory, RuleCheck, RuleDefinition, SessionScore, TrackerConfig};
 use std::sync::Mutex;
-use specta::Type;
+use tauri::State;
 use tauri_specta::{collect_commands, Builder};
 
 // App state with thread-safe scorer
@@ -121,7 +118,6 @@ fn create_specta_builder() -> Builder<tauri::Wry> {
         .ty::<RuleCategory>()
 }
 
-#[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     // GOLD: Generate TypeScript bindings at compile time
     // This would typically be done in build.rs, but for now we'll document it
@@ -139,4 +135,9 @@ pub fn run() {
         )
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
+}
+
+#[cfg_attr(mobile, tauri::mobile_entry_point)]
+fn main() {
+    run();
 }

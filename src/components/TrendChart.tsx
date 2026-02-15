@@ -13,9 +13,7 @@ interface TrendChartProps {
 export function TrendChart({ sessions }: TrendChartProps) {
   if (sessions.length === 0) {
     return (
-      <div className="flex items-center justify-center h-48 text-slate-400">
-        No data available
-      </div>
+      <div className="flex items-center justify-center h-48 text-slate-400">No data available</div>
     );
   }
 
@@ -25,8 +23,6 @@ export function TrendChart({ sessions }: TrendChartProps) {
   );
 
   const maxScore = 100;
-  const minScore = 0;
-  const chartHeight = 150;
 
   return (
     <div className="h-48">
@@ -50,7 +46,7 @@ export function TrendChart({ sessions }: TrendChartProps) {
 
             {/* Data bars */}
             <div className="absolute inset-0 flex items-end justify-around gap-2">
-              {sortedSessions.map((session, i) => {
+              {sortedSessions.map((session, _i) => {
                 const height = (session.score_percentage / maxScore) * 100;
                 return (
                   <div
@@ -62,8 +58,8 @@ export function TrendChart({ sessions }: TrendChartProps) {
                         session.score_percentage >= 80
                           ? "bg-green-500"
                           : session.score_percentage >= 60
-                          ? "bg-yellow-500"
-                          : "bg-red-500"
+                            ? "bg-yellow-500"
+                            : "bg-red-500"
                       }`}
                       style={{ height: `${height}%` }}
                       title={`${session.session_id}: ${session.score_percentage.toFixed(1)}%`}

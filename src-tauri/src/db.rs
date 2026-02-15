@@ -229,13 +229,13 @@ impl Database {
         .execute(&self.pool)
         .await?;
 
-        // Get current version
+        // Get current version (row always exists; value may be NULL)
         let current_version: Option<i64> =
-            sqlx::query_scalar("SELECT MAX(version) FROM _migrations")
-                .fetch_optional(&self.pool)
+            sqlx::query_scalar::<_, Option<i64>>("SELECT MAX(version) FROM _migrations")
+                .fetch_one(&self.pool)
                 .await?;
 
-        let current_version = current_version.flatten().unwrap_or(0);
+        let current_version = current_version.unwrap_or(0);
 
         // Apply pending migrations
         for migration in MIGRATIONS {
@@ -263,11 +263,11 @@ impl Database {
 
     /// Get current migration version
     pub async fn migration_version(&self) -> Result<i64, DbError> {
-        let version: Option<i64> = sqlx::query_scalar("SELECT MAX(version) FROM _migrations")
-            .fetch_optional(&self.pool)
+        let version: Option<i64> = sqlx::query_scalar::<_, Option<i64>>("SELECT MAX(version) FROM _migrations")
+            .fetch_one(&self.pool)
             .await?;
 
-        Ok(version.flatten().unwrap_or(0))
+        Ok(version.unwrap_or(0))
     }
 
     // =========================================================================

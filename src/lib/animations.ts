@@ -1,20 +1,20 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Animation utilities for dashboard
 
 export const TIMING = {
-  micro: 150,      // 150ms - micro-interactions
-  fast: 200,       // 200ms - fast feedback
-  standard: 300,   // 300ms - standard transitions
-  moderate: 400,   // 400ms - moderate animations
-  slow: 600,       // 600ms - emphasis animations
+  micro: 150, // 150ms - micro-interactions
+  fast: 200, // 200ms - fast feedback
+  standard: 300, // 300ms - standard transitions
+  moderate: 400, // 400ms - moderate animations
+  slow: 600, // 600ms - emphasis animations
 } as const;
 
 export const EASING = {
-  swift: 'cubic-bezier(0.4, 0, 0.2, 1)',
-  standard: 'cubic-bezier(0.4, 0, 0.2, 1)',
-  out: 'cubic-bezier(0, 0, 0.2, 1)',
-  in: 'cubic-bezier(0.4, 0, 1, 1)',
+  swift: "cubic-bezier(0.4, 0, 0.2, 1)",
+  standard: "cubic-bezier(0.4, 0, 0.2, 1)",
+  out: "cubic-bezier(0, 0, 0.2, 1)",
+  in: "cubic-bezier(0.4, 0, 1, 1)",
 } as const;
 
 // Stagger delay calculator
@@ -42,10 +42,10 @@ export function useCountUp(
 
       const elapsed = timestamp - startTimeRef.current;
       const progress = Math.min(elapsed / duration, 1);
-      
+
       // easeOutQuart
-      const easeProgress = 1 - Math.pow(1 - progress, 4);
-      
+      const easeProgress = 1 - (1 - progress) ** 4;
+
       setCurrentValue(Math.round(targetValue * easeProgress));
 
       if (progress < 1) {
@@ -67,9 +67,9 @@ export function useCountUp(
 
 // CSS classes for animations
 export const animationClasses = {
-  entrance: 'animate-entrance',
-  fadeIn: 'animate-fade-in',
-  slideUp: 'animate-slide-up',
-  scaleIn: 'animate-scale-in',
-  barGrow: 'animate-bar-grow',
+  entrance: "animate-entrance",
+  fadeIn: "animate-fade-in",
+  slideUp: "animate-slide-up",
+  scaleIn: "animate-scale-in",
+  barGrow: "animate-bar-grow",
 } as const;
