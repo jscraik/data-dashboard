@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
 /* Import design system tokens */
-@import "../../../DesignSystem/packages/tokens/src/foundations.css";
-@import "../../../DesignSystem/packages/tokens/src/aliases.css";
-@import "../../../DesignSystem/packages/tokens/src/enhanced.css";
+@import "../../../DesignSystem/packages/tokens/src/tokens.css";
 
 /* GOLD: CSS-first configuration using @theme directive (Tailwind v4) */
 @theme {
