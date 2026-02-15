@@ -3,11 +3,10 @@
  * Auto-scores new session logs and reports completion
  */
 
-import { watch, type FSWatcher } from "node:fs";
-import { readFile, stat, mkdir, writeFile, access } from "node:fs/promises";
-import { join, dirname, basename, relative } from "node:path";
+import { createReadStream, type FSWatcher, watch } from "node:fs";
+import { access, mkdir, readFile, writeFile } from "node:fs/promises";
+import { basename, dirname, join } from "node:path";
 import { createInterface } from "node:readline";
-import { createReadStream } from "node:fs";
 
 interface SessionScore {
   sessionId: string;
@@ -36,7 +35,8 @@ interface ScoreReport {
   scores: SessionScore[];
 }
 
-const SESSIONS_DIR = process.env.SESSIONS_DIR || join(process.env.HOME || "~", ".codex", "sessions");
+const SESSIONS_DIR =
+  process.env.SESSIONS_DIR || join(process.env.HOME || "~", ".codex", "sessions");
 const SCORES_FILE = process.env.SCORES_FILE || join(process.cwd(), "session-scores.json");
 
 /**
@@ -116,7 +116,11 @@ async function parseSessionFile(filePath: string): Promise<SessionMetrics> {
  * Calculate a score based on session metrics
  * Returns a score from 0-100 and a letter grade
  */
-function calculateScore(metrics: SessionMetrics): { score: number; grade: SessionScore["grade"]; summary: string } {
+function calculateScore(metrics: SessionMetrics): {
+  score: number;
+  grade: SessionScore["grade"];
+  summary: string;
+} {
   let score = 100;
 
   // Deduct for errors (major penalty)
@@ -245,9 +249,7 @@ async function processSessionFile(filePath: string, report: ScoreReport): Promis
     console.log(`  Summary: ${score.summary}`);
     console.log(`  Tools used: ${Object.keys(score.metrics.toolBreakdown).join(", ") || "none"}`);
     console.log("");
-  } catch (error) {
-    console.error(`[${new Date().toISOString()}] Error scoring ${filePath}:`, error);
-  }
+  } catch (_error) {}
 }
 
 /**
@@ -287,7 +289,7 @@ export function startWatcher(): FSWatcher {
   scanAllSessions().catch(console.error);
 
   // Set up watcher
-  const watcher = watch(SESSIONS_DIR, { recursive: true }, async (eventType, filename) => {
+  const watcher = watch(SESSIONS_DIR, { recursive: true }, async (_eventType, filename) => {
     if (!filename || !filename.endsWith(".jsonl")) {
       return;
     }
@@ -339,7 +341,9 @@ export async function getSummaryReport(): Promise<void> {
   console.log("\nRecent Sessions:");
   const recent = report.scores.slice(-5).reverse();
   for (const score of recent) {
-    console.log(`  ${score.grade} ${score.score.toString().padStart(3)} - ${score.sessionId.slice(0, 20)}... (${score.summary})`);
+    console.log(
+      `  ${score.grade} ${score.score.toString().padStart(3)} - ${score.sessionId.slice(0, 20)}... (${score.summary})`
+    );
   }
 
   console.log("\n");

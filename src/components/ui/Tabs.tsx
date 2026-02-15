@@ -1,19 +1,29 @@
-import * as React from "react";
 import { clsx } from "clsx";
+import * as React from "react";
+
+type TabsInjectedProps = {
+  selectedValue?: string;
+  onValueChange?: (value: string) => void;
+};
+
+function focusTab(tablistEl: HTMLElement, nextValue: string | null) {
+  if (!nextValue) return;
+  const tab = tablistEl.querySelector<HTMLElement>(`[role="tab"][data-value="${nextValue}"]`);
+  tab?.focus();
+}
 
 interface TabsProps {
   value: string;
   onValueChange: (value: string) => void;
   children: React.ReactNode;
-  "aria-label"?: string;
 }
 
-export function Tabs({ value, onValueChange, children, "aria-label": ariaLabel }: TabsProps) {
+export function Tabs({ value, onValueChange, children }: TabsProps) {
   return (
-    <div className="w-full" aria-label={ariaLabel}>
+    <div className="w-full">
       {React.Children.map(children, (child) => {
-        if (React.isValidElement(child)) {
-          return React.cloneElement(child as React.ReactElement, {
+        if (React.isValidElement<TabsInjectedProps>(child)) {
+          return React.cloneElement(child, {
             selectedValue: value,
             onValueChange,
           });
@@ -32,16 +42,59 @@ interface TabsListProps {
   "aria-label"?: string;
 }
 
-export function TabsList({ children, selectedValue, onValueChange, className, "aria-label": ariaLabel }: TabsListProps) {
+export function TabsList({
+  children,
+  selectedValue,
+  onValueChange,
+  className,
+  "aria-label": ariaLabel,
+}: TabsListProps) {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    const key = e.key;
+    if (key !== "ArrowLeft" && key !== "ArrowRight" && key !== "Home" && key !== "End") return;
+
+    const tablistEl = e.currentTarget;
+    const tabs = Array.from(
+      tablistEl.querySelectorAll<HTMLElement>('[role="tab"]:not([disabled])')
+    );
+    if (tabs.length === 0) return;
+
+    e.preventDefault();
+
+    const activeEl = document.activeElement as HTMLElement | null;
+    const activeIndex = activeEl ? tabs.indexOf(activeEl) : -1;
+    const selectedIndex = tabs.findIndex((t) => t.dataset.value === selectedValue);
+    const currentIndex = Math.max(0, activeIndex >= 0 ? activeIndex : selectedIndex);
+
+    const nextIndex =
+      key === "Home"
+        ? 0
+        : key === "End"
+          ? tabs.length - 1
+          : key === "ArrowRight"
+            ? (currentIndex + 1) % tabs.length
+            : (currentIndex - 1 + tabs.length) % tabs.length;
+
+    const nextValue = tabs[nextIndex]?.dataset.value ?? null;
+    if (nextValue) {
+      onValueChange?.(nextValue);
+      focusTab(tablistEl, nextValue);
+    }
+  };
+
   return (
-    <div 
-      role="tablist" 
+    <div
+      role="tablist"
       aria-label={ariaLabel || "Dashboard navigation"}
-      className={clsx("inline-flex h-10 items-center justify-center rounded-lg bg-slate-100 p-1 relative", className)}
+      onKeyDown={handleKeyDown}
+      className={clsx(
+        "inline-flex h-10 items-center justify-center rounded-lg bg-slate-100 p-1 relative",
+        className
+      )}
     >
       {React.Children.map(children, (child) => {
-        if (React.isValidElement(child)) {
-          return React.cloneElement(child as React.ReactElement, {
+        if (React.isValidElement<TabsInjectedProps>(child)) {
+          return React.cloneElement(child, {
             selectedValue,
             onValueChange,
           });
@@ -60,15 +113,23 @@ interface TabsTriggerProps {
   className?: string;
 }
 
-export function TabsTrigger({ value, children, selectedValue, onValueChange, className }: TabsTriggerProps) {
+export function TabsTrigger({
+  value,
+  children,
+  selectedValue,
+  onValueChange,
+  className,
+}: TabsTriggerProps) {
   const isSelected = selectedValue === value;
-  
+
   return (
     <button
+      type="button"
       role="tab"
       aria-selected={isSelected}
       aria-controls={`panel-${value}`}
       id={`tab-${value}`}
+      data-value={value}
       tabIndex={isSelected ? 0 : -1}
       onClick={() => onValueChange?.(value)}
       className={clsx(
@@ -95,7 +156,7 @@ export function TabsContent({ value, children, selectedValue, className }: TabsC
   const isSelected = selectedValue === value;
   const [isVisible, setIsVisible] = React.useState(isSelected);
   const [shouldRender, setShouldRender] = React.useState(isSelected);
-  
+
   React.useEffect(() => {
     if (isSelected) {
       setShouldRender(true);
@@ -109,19 +170,17 @@ export function TabsContent({ value, children, selectedValue, className }: TabsC
       return () => clearTimeout(timer);
     }
   }, [isSelected]);
-  
+
   if (!shouldRender) return null;
-  
+
   return (
-    <div 
+    <div
       role="tabpanel"
       id={`panel-${value}`}
       aria-labelledby={`tab-${value}`}
       className={clsx(
         "mt-2 ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 transition-all duration-fast ease-out",
-        isVisible 
-          ? "opacity-100 translate-y-0" 
-          : "opacity-0 translate-y-2 pointer-events-none",
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none",
         className
       )}
     >

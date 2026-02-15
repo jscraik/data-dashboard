@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 /* Import design system tokens */
-@import "../../../design-system/packages/tokens/src/foundations.css";
-@import "../../../design-system/packages/tokens/src/aliases.css";
-@import "../../../design-system/packages/tokens/src/enhanced.css";
+@import "../../../DesignSystem/packages/tokens/src/foundations.css";
+@import "../../../DesignSystem/packages/tokens/src/aliases.css";
+@import "../../../DesignSystem/packages/tokens/src/enhanced.css";
 
 /* GOLD: CSS-first configuration using @theme directive (Tailwind v4) */
 @theme {
@@ -287,7 +287,9 @@
   }
 
   /* Button component using design system tokens */
-  .btn {
+  .btn,
+  .btn-primary,
+  .btn-secondary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -297,15 +299,29 @@
     line-height: var(--line-height-button-label);
     font-weight: var(--font-weight-medium);
     letter-spacing: var(--letter-spacing-button-label);
+    text-decoration: none;
     transition: all var(--duration-fast) var(--ease-standard);
   }
 
-  .btn:hover {
+  .btn:not(:disabled):hover,
+  .btn-primary:not(:disabled):hover,
+  .btn-secondary:not(:disabled):hover {
     transform: translateY(var(--ds-micro-hover-translate-y));
   }
 
-  .btn:active {
+  .btn:not(:disabled):active,
+  .btn-primary:not(:disabled):active,
+  .btn-secondary:not(:disabled):active {
     transform: scale(var(--ds-micro-press-scale));
+  }
+
+  .btn:focus-visible,
+  .btn-primary:focus-visible,
+  .btn-secondary:focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 2px var(--ds-bg-primary),
+      0 0 0 4px var(--foundation-accent-blue);
   }
 
   .btn-primary {
@@ -313,7 +329,7 @@
     color: var(--color-accent-foreground);
   }
 
-  .btn-primary:hover {
+  .btn-primary:not(:disabled):hover {
     background-color: var(--foundation-accent-blue);
   }
 
@@ -322,7 +338,7 @@
     color: var(--ds-fg-secondary);
   }
 
-  .btn-secondary:hover {
+  .btn-secondary:not(:disabled):hover {
     background-color: var(--ds-bg-muted);
   }
 
@@ -420,14 +436,14 @@
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+    scroll-behavior: auto;
   }
-  
+
   .animate-pulse {
-    animation: none !important;
+    animation: none;
   }
 }
 
@@ -444,8 +460,12 @@
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-up {
@@ -521,9 +541,21 @@
 }
 
 /* Staggered entrance delays */
-.stagger-1 { animation-delay: 50ms; }
-.stagger-2 { animation-delay: 100ms; }
-.stagger-3 { animation-delay: 150ms; }
-.stagger-4 { animation-delay: 200ms; }
-.stagger-5 { animation-delay: 250ms; }
-.stagger-6 { animation-delay: 300ms; }
+.stagger-1 {
+  animation-delay: 50ms;
+}
+.stagger-2 {
+  animation-delay: 100ms;
+}
+.stagger-3 {
+  animation-delay: 150ms;
+}
+.stagger-4 {
+  animation-delay: 200ms;
+}
+.stagger-5 {
+  animation-delay: 250ms;
+}
+.stagger-6 {
+  animation-delay: 300ms;
+}

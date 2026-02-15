@@ -21,7 +21,7 @@ mod integration_tests;
 
 /// SECURITY: Input validation and sanitization helpers
 mod security {
-    use std::path::Path;
+    use std::path::{Path, PathBuf};
     
     /// Validate session ID to prevent directory traversal
     pub fn validate_session_id(session_id: &str) -> bool {
@@ -383,7 +383,7 @@ impl BehaviorScorer {
         let canonical_dir = dir_path.canonicalize()
             .map_err(|e| format!("Invalid directory path: {}", e))?;
         
-        if !canonical_dir.starts_path(&canonical_base) {
+        if !canonical_dir.starts_with(&canonical_base) {
             return Err("Directory path is outside allowed base path".to_string());
         }
         

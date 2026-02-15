@@ -1,4 +1,4 @@
-import { Shield, Zap, MessageSquare, Brain, Play } from "lucide-react";
+import { Brain, MessageSquare, Play, Shield, Zap } from "lucide-react";
 
 interface Rule {
   id: string;
@@ -22,11 +22,11 @@ const categoryIcons: Record<string, React.ElementType> = {
 };
 
 const categoryColors: Record<string, string> = {
-  Startup: "bg-blue-100 text-blue-800",
-  Response: "bg-purple-100 text-purple-800",
-  Confidence: "bg-indigo-100 text-indigo-800",
-  Safety: "bg-red-100 text-red-800",
-  Communication: "bg-green-100 text-green-800",
+  Startup: "bg-slate-50 text-slate-700 border border-slate-200",
+  Response: "bg-slate-50 text-slate-700 border border-slate-200",
+  Confidence: "bg-slate-50 text-slate-700 border border-slate-200",
+  Safety: "bg-slate-50 text-slate-700 border border-slate-200",
+  Communication: "bg-slate-50 text-slate-700 border border-slate-200",
 };
 
 export function RuleList({ rules }: RuleListProps) {
@@ -41,7 +41,7 @@ export function RuleList({ rules }: RuleListProps) {
         {rules.map((rule) => {
           const Icon = categoryIcons[rule.category] || Zap;
           const badgeClass = categoryColors[rule.category] || "bg-slate-100 text-slate-800";
-          
+
           return (
             <div key={rule.id} className="card hover:shadow-md transition-shadow">
               <div className="card-body">
@@ -57,9 +57,7 @@ export function RuleList({ rules }: RuleListProps) {
                         <p className="text-sm text-slate-600 mt-1">{rule.description}</p>
                       </div>
 
-                      <span className={`badge ${badgeClass} shrink-0`}>
-                        {rule.category}
-                      </span>
+                      <span className={`badge ${badgeClass} shrink-0`}>{rule.category}</span>
                     </div>
 
                     <div className="mt-3 flex items-center gap-4 text-sm">

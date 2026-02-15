@@ -59,7 +59,7 @@ impl ScoreCache {
 
 /// Batch processing for multiple sessions
 pub async fn score_sessions_batch(
-    scorer: &crate::BehaviorScorer,
+    scorer: Arc<crate::BehaviorScorer>,
     sessions: Vec<(String, String)>, // (session_id, transcript)
     cache: &ScoreCache,
 ) -> Vec<Result<crate::SessionScore, String>> {
@@ -76,6 +76,7 @@ pub async fn score_sessions_batch(
         }
         
         // Score in parallel
+        let scorer = Arc::clone(&scorer);
         tasks.spawn(async move {
             let result = scorer.score_session(&session_id, &transcript);
             (session_id, result)

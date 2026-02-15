@@ -1,9 +1,8 @@
-import { useEffect, useState, useCallback } from "react";
-import { invoke } from "@tauri-apps/api/core";
+import { Activity, Brain, Clock, Play, Scan, Shield, TrendingUp } from "lucide-react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { RecentSessions } from "./RecentSessions";
 import { ScoreCard } from "./ScoreCard";
 import { TrendChart } from "./TrendChart";
-import { RecentSessions } from "./RecentSessions";
-import { Activity, TrendingUp, Clock, Shield, Brain, Play } from "lucide-react";
 
 // Types
 interface SessionScore {
@@ -12,6 +11,12 @@ interface SessionScore {
   total_rules: number;
   passed_rules: number;
   score_percentage: number;
+  rules?: Array<{
+    rule_id: string;
+    rule_name: string;
+    passed: boolean;
+    suggestion: string | null;
+  }>;
   summary: string;
 }
 
@@ -30,7 +35,7 @@ function useSessionData() {
   const loadSessions = useCallback(async () => {
     setLoading(true);
     setError(null);
-    
+
     try {
       // In a real implementation, we'd load from the database via Tauri
       // For now, using mock data
@@ -41,6 +46,26 @@ function useSessionData() {
           total_rules: 8,
           passed_rules: 6,
           score_percentage: 75.0,
+          rules: [
+            {
+              rule_id: "binary_decision",
+              rule_name: "Binary decisions",
+              passed: false,
+              suggestion: "End decisions with “Ship now? Y/N” to make next steps explicit.",
+            },
+            {
+              rule_id: "objective_before_execution",
+              rule_name: "Objective first",
+              passed: false,
+              suggestion: "State the objective in 1–2 lines before running commands.",
+            },
+            {
+              rule_id: "approval_for_external",
+              rule_name: "Approval for external",
+              passed: true,
+              suggestion: null,
+            },
+          ],
           summary: "Good adherence. 2 minor improvements possible.",
         },
         {
@@ -49,12 +74,26 @@ function useSessionData() {
           total_rules: 8,
           passed_rules: 7,
           score_percentage: 87.5,
+          rules: [
+            {
+              rule_id: "local_memory_first",
+              rule_name: "Local-memory query",
+              passed: false,
+              suggestion: "Query local-memory before reading files for repo context.",
+            },
+            {
+              rule_id: "no_email_trust",
+              rule_name: "Email safety",
+              passed: true,
+              suggestion: null,
+            },
+          ],
           summary: "Excellent adherence.",
         },
       ];
-      
+
       // Simulate API delay
-      await new Promise(resolve => setTimeout(resolve, 500));
+      await new Promise((resolve) => setTimeout(resolve, 500));
       setSessions(mockSessions);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to load sessions");
@@ -67,19 +106,29 @@ function useSessionData() {
     loadSessions();
   }, [loadSessions]);
 
+  const sessionsByTimeAsc = useMemo(
+    () =>
+      [...sessions].sort(
+        (a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
+      ),
+    [sessions]
+  );
+
   // Derived state - React UI Pattern: Compute derived values
   const stats = {
-    averageScore: sessions.length > 0
-      ? sessions.reduce((sum, s) => sum + s.score_percentage, 0) / sessions.length
-      : 0,
-    totalSessions: sessions.length,
-    sessionsTrendingUp: sessions.filter((s, i) => {
+    averageScore:
+      sessionsByTimeAsc.length > 0
+        ? sessionsByTimeAsc.reduce((sum, s) => sum + s.score_percentage, 0) /
+          sessionsByTimeAsc.length
+        : 0,
+    totalSessions: sessionsByTimeAsc.length,
+    sessionsTrendingUp: sessionsByTimeAsc.filter((s, i) => {
       if (i === 0) return false;
-      return s.score_percentage > sessions[i - 1].score_percentage;
+      return s.score_percentage > sessionsByTimeAsc[i - 1].score_percentage;
     }).length,
   };
 
-  return { sessions, loading, error, stats, refetch: loadSessions };
+  return { sessions: sessionsByTimeAsc, loading, error, stats, refetch: loadSessions };
 }
 
 // Rule performance data with icons - React UI Pattern: Data with presentation
@@ -115,7 +164,7 @@ function ErrorState({ message, onRetry }: { message: string; onRetry: () => void
   return (
     <div role="alert" className="flex flex-col items-center justify-center h-64">
       <div className="text-red-500 mb-4">Error: {message}</div>
-      <button onClick={onRetry} className="btn-primary">
+      <button type="button" onClick={onRetry} className="btn-primary">
         Retry
       </button>
     </div>
@@ -130,7 +179,7 @@ function EmptyState({ onRefresh }: { onRefresh: () => void }) {
       <p className="text-sm text-slate-500 mb-4">
         Use the &quot;Score Session&quot; tab to analyze your first session.
       </p>
-      <button onClick={onRefresh} className="btn-secondary">
+      <button type="button" onClick={onRefresh} className="btn-secondary">
         Refresh
       </button>
     </div>
@@ -144,8 +193,8 @@ function RulePerformanceChart({ rules }: { rules: RuleStat[] }) {
       {rules.map((rule, index) => {
         const Icon = rule.icon;
         return (
-          <div 
-            key={rule.name} 
+          <div
+            key={rule.name}
             className="flex items-center gap-3 animate-entrance"
             style={{ animationDelay: `${index * 100}ms` }}
           >
@@ -155,22 +204,30 @@ function RulePerformanceChart({ rules }: { rules: RuleStat[] }) {
             <div className="flex-1">
               <div className="flex justify-between text-sm mb-1">
                 <span className="text-slate-700 font-medium">{rule.name}</span>
-                <span className={`font-semibold ${
-                  rule.pass >= 80 ? "text-green-600" : 
-                  rule.pass >= 60 ? "text-yellow-600" : "text-red-600"
-                }`}>
+                <span
+                  className={`font-semibold ${
+                    rule.pass >= 80
+                      ? "text-green-600"
+                      : rule.pass >= 60
+                        ? "text-yellow-600"
+                        : "text-red-600"
+                  }`}
+                >
                   {rule.pass}%
                 </span>
               </div>
               <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
                 <div
                   className={`h-full rounded-full animate-bar-grow ${
-                    rule.pass >= 80 ? "bg-green-500" : 
-                    rule.pass >= 60 ? "bg-yellow-500" : "bg-red-500"
+                    rule.pass >= 80
+                      ? "bg-green-500"
+                      : rule.pass >= 60
+                        ? "bg-yellow-500"
+                        : "bg-red-500"
                   }`}
-                  style={{ 
+                  style={{
                     width: `${rule.pass}%`,
-                    animationDelay: `${index * 100 + 200}ms`
+                    animationDelay: `${index * 100 + 200}ms`,
                   }}
                 />
               </div>
@@ -183,7 +240,7 @@ function RulePerformanceChart({ rules }: { rules: RuleStat[] }) {
 }
 
 // Main Dashboard component - React UI Pattern: Composition
-export function Dashboard() {
+export function Dashboard({ onGoToScore }: { onGoToScore?: () => void }) {
   const { sessions, loading, error, stats, refetch } = useSessionData();
 
   if (loading) return <DashboardSkeleton />;
@@ -191,9 +248,58 @@ export function Dashboard() {
   if (sessions.length === 0) return <EmptyState onRefresh={refetch} />;
 
   const { averageScore, totalSessions, sessionsTrendingUp } = stats;
+  const sessionsByTimeDesc = [...sessions].reverse();
+  const latest = sessionsByTimeDesc[0] ?? null;
+  const previous = sessionsByTimeDesc[1] ?? null;
+  const delta = latest && previous ? latest.score_percentage - previous.score_percentage : null;
 
   return (
     <div className="space-y-6">
+      {/* Hero - React UI Pattern: Focusing mechanism */}
+      {latest && (
+        <section className="card animate-entrance" aria-label="Latest score summary">
+          <div className="card-body flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div className="min-w-0">
+              <div className="flex items-baseline gap-3">
+                <h2 className="text-lg font-semibold text-slate-900">Latest score</h2>
+                {delta !== null && (
+                  <span
+                    className={`text-sm font-semibold ${delta >= 0 ? "text-green-600" : "text-red-600"}`}
+                  >
+                    {delta >= 0 ? `+${delta.toFixed(1)}` : delta.toFixed(1)} pts
+                  </span>
+                )}
+              </div>
+              <div className="flex items-end gap-4 mt-2">
+                <div className="text-4xl font-bold text-slate-900">
+                  {latest.score_percentage.toFixed(1)}%
+                </div>
+                <div className="text-sm text-slate-500 pb-1">
+                  {latest.passed_rules}/{latest.total_rules} rules passed
+                </div>
+              </div>
+              <p className="text-sm text-slate-600 mt-2">{latest.summary}</p>
+            </div>
+
+            <div className="flex items-center gap-3">
+              {onGoToScore && (
+                <button
+                  type="button"
+                  className="btn-primary flex items-center gap-2"
+                  onClick={onGoToScore}
+                >
+                  <Scan className="w-4 h-4" />
+                  Score new session
+                </button>
+              )}
+              <div className="text-xs text-slate-500">
+                Updated {new Date(latest.timestamp).toLocaleString()}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Stats Overview - React UI Pattern: Grid layouts */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-4" aria-label="Dashboard statistics">
         <ScoreCard

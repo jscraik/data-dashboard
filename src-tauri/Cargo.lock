@@ -655,6 +655,7 @@ dependencies = [
  "specta",
  "sqlx",
  "tauri",
+ "tauri-build",
  "tauri-plugin-shell",
  "tauri-plugin-sql",
  "tauri-specta",
