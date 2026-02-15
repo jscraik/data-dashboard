@@ -1,0 +1,24 @@
+# macOS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Node / package managers
+node_modules/
+.pnpm-store/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# Env
+.env
+.env.*
+
+# Tauri / Rust
+src-tauri/target/
+

@@ -1,0 +1,1877 @@
+{
+  "lastScan": "2026-02-15T14:02:47.703Z",
+  "totalSessions": 95,
+  "scores": [
+    {
+      "sessionId": "2026-02-15T06-05-14-019c5fe7-3742-77a0-8f86-29b9b57d6007",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T06-05-14-019c5fe7-3742-77a0-8f86-29b9b57d6007.jsonl",
+      "timestamp": "2026-02-15T14:02:44.304Z",
+      "metrics": {
+        "totalEvents": 1207,
+        "toolCalls": 128,
+        "toolBreakdown": {
+          "exec_command": 117,
+          "write_stdin": 9,
+          "request_user_input": 2
+        },
+        "errors": 0,
+        "userMessages": 21,
+        "assistantMessages": 21,
+        "reasoningEvents": 141,
+        "duration": 28613326
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "1207 events, 128 tool calls, 141 reasoning"
+    },
+    {
+      "sessionId": "2026-02-15T04-22-32-019c5f89-31c5-7bc1-8117-c144dc6111d1",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T04-22-32-019c5f89-31c5-7bc1-8117-c144dc6111d1.jsonl",
+      "timestamp": "2026-02-15T14:02:44.345Z",
+      "metrics": {
+        "totalEvents": 212,
+        "toolCalls": 24,
+        "toolBreakdown": {
+          "exec_command": 24
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 5,
+        "reasoningEvents": 25,
+        "duration": 178310
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "212 events, 24 tool calls, 25 reasoning"
+    },
+    {
+      "sessionId": "2026-02-15T02-42-45-019c5f2d-d6c2-7f83-be6c-756578803357",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T02-42-45-019c5f2d-d6c2-7f83-be6c-756578803357.jsonl",
+      "timestamp": "2026-02-15T14:02:44.350Z",
+      "metrics": {
+        "totalEvents": 19,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 4,
+        "reasoningEvents": 1,
+        "duration": 13288
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "19 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-15T02-42-44-019c5f2d-d270-72c2-9048-a46896205426",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T02-42-44-019c5f2d-d270-72c2-9048-a46896205426.jsonl",
+      "timestamp": "2026-02-15T14:02:44.360Z",
+      "metrics": {
+        "totalEvents": 19,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 4,
+        "reasoningEvents": 1,
+        "duration": 15762
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "19 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-15T02-42-43-019c5f2d-ce7a-7bb1-8a62-2928f70e4c64",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T02-42-43-019c5f2d-ce7a-7bb1-8a62-2928f70e4c64.jsonl",
+      "timestamp": "2026-02-15T14:02:44.363Z",
+      "metrics": {
+        "totalEvents": 19,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 4,
+        "reasoningEvents": 1,
+        "duration": 12636
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "19 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-15T02-42-42-019c5f2d-c9cf-7492-9354-1f906d31a51c",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T02-42-42-019c5f2d-c9cf-7492-9354-1f906d31a51c.jsonl",
+      "timestamp": "2026-02-15T14:02:44.367Z",
+      "metrics": {
+        "totalEvents": 19,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 4,
+        "reasoningEvents": 1,
+        "duration": 13879
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "19 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-15T02-41-41-019c5f2c-dd71-7132-bdc0-a9ce7fc70a17",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T02-41-41-019c5f2c-dd71-7132-bdc0-a9ce7fc70a17.jsonl",
+      "timestamp": "2026-02-15T14:02:44.370Z",
+      "metrics": {
+        "totalEvents": 19,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 4,
+        "reasoningEvents": 1,
+        "duration": 16358
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "19 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-15T02-41-40-019c5f2c-d8ea-79e2-b5e5-9e6466896f91",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T02-41-40-019c5f2c-d8ea-79e2-b5e5-9e6466896f91.jsonl",
+      "timestamp": "2026-02-15T14:02:44.390Z",
+      "metrics": {
+        "totalEvents": 19,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 4,
+        "reasoningEvents": 1,
+        "duration": 16322
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "19 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-15T02-41-39-019c5f2c-d423-72e2-884b-a093f1d041f2",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T02-41-39-019c5f2c-d423-72e2-884b-a093f1d041f2.jsonl",
+      "timestamp": "2026-02-15T14:02:44.398Z",
+      "metrics": {
+        "totalEvents": 19,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 4,
+        "reasoningEvents": 1,
+        "duration": 16575
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "19 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-15T02-41-38-019c5f2c-cfd9-7f83-ba3e-0d168f2560b8",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T02-41-38-019c5f2c-cfd9-7f83-ba3e-0d168f2560b8.jsonl",
+      "timestamp": "2026-02-15T14:02:44.402Z",
+      "metrics": {
+        "totalEvents": 19,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 4,
+        "reasoningEvents": 1,
+        "duration": 14938
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "19 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-15T02-41-37-019c5f2c-cb46-7ba1-b2d5-6265893b34a7",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T02-41-37-019c5f2c-cb46-7ba1-b2d5-6265893b34a7.jsonl",
+      "timestamp": "2026-02-15T14:02:44.407Z",
+      "metrics": {
+        "totalEvents": 19,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 4,
+        "reasoningEvents": 1,
+        "duration": 13502
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "19 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-15T02-41-35-019c5f2c-c6a7-70b0-8cb3-115bc5ad4171",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/15/rollout-2026-02-15T02-41-35-019c5f2c-c6a7-70b0-8cb3-115bc5ad4171.jsonl",
+      "timestamp": "2026-02-15T14:02:44.409Z",
+      "metrics": {
+        "totalEvents": 19,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 4,
+        "reasoningEvents": 1,
+        "duration": 13976
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "19 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-14T23-56-31-019c5e95-a596-7b33-8e86-7dd0e1c3041d",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/14/rollout-2026-02-14T23-56-31-019c5e95-a596-7b33-8e86-7dd0e1c3041d.jsonl",
+      "timestamp": "2026-02-15T14:02:44.733Z",
+      "metrics": {
+        "totalEvents": 3963,
+        "toolCalls": 341,
+        "toolBreakdown": {
+          "exec_command": 295,
+          "write_stdin": 12,
+          "request_user_input": 3,
+          "spawn_agent": 14,
+          "wait": 7,
+          "close_agent": 10
+        },
+        "errors": 0,
+        "userMessages": 86,
+        "assistantMessages": 84,
+        "reasoningEvents": 425,
+        "duration": 15437693
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "3963 events, 341 tool calls, 425 reasoning"
+    },
+    {
+      "sessionId": "2026-02-14T23-51-09-019c5e90-bb89-79f0-8563-596551ea8934",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/14/rollout-2026-02-14T23-51-09-019c5e90-bb89-79f0-8563-596551ea8934.jsonl",
+      "timestamp": "2026-02-15T14:02:44.736Z",
+      "metrics": {
+        "totalEvents": 19,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 5,
+        "reasoningEvents": 1,
+        "duration": 8192
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "19 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-13T22-24-02-019c591a-9bda-7030-b27d-f091c91375eb",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/13/rollout-2026-02-13T22-24-02-019c591a-9bda-7030-b27d-f091c91375eb.jsonl",
+      "timestamp": "2026-02-15T14:02:45.444Z",
+      "metrics": {
+        "totalEvents": 7789,
+        "toolCalls": 707,
+        "toolBreakdown": {
+          "exec_command": 525,
+          "request_user_input": 3,
+          "search_tool_bm25": 1,
+          "write_stdin": 178
+        },
+        "errors": 0,
+        "userMessages": 177,
+        "assistantMessages": 176,
+        "reasoningEvents": 890,
+        "duration": 91506685
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "7789 events, 707 tool calls, 890 reasoning"
+    },
+    {
+      "sessionId": "2026-02-13T22-00-37-019c5905-2f28-7912-af09-b06cbb4b9bfe",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/13/rollout-2026-02-13T22-00-37-019c5905-2f28-7912-af09-b06cbb4b9bfe.jsonl",
+      "timestamp": "2026-02-15T14:02:45.611Z",
+      "metrics": {
+        "totalEvents": 429,
+        "toolCalls": 53,
+        "toolBreakdown": {
+          "exec_command": 48,
+          "write_stdin": 5
+        },
+        "errors": 0,
+        "userMessages": 6,
+        "assistantMessages": 9,
+        "reasoningEvents": 48,
+        "duration": 923976
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "429 events, 53 tool calls, 48 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T21-56-38-019c2fce-a9bd-7122-a775-cfef56c092aa",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T21-56-38-019c2fce-a9bd-7122-a775-cfef56c092aa.jsonl",
+      "timestamp": "2026-02-15T14:02:45.632Z",
+      "metrics": {
+        "totalEvents": 14,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 33858
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "14 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T19-53-42-019c2f5e-1aec-7c81-9d25-2ea38c283022",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T19-53-42-019c2f5e-1aec-7c81-9d25-2ea38c283022.jsonl",
+      "timestamp": "2026-02-15T14:02:45.649Z",
+      "metrics": {
+        "totalEvents": 18,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 182885
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "18 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T19-51-35-019c2f5c-2c40-7430-a4a9-325797c06e6e",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T19-51-35-019c2f5c-2c40-7430-a4a9-325797c06e6e.jsonl",
+      "timestamp": "2026-02-15T14:02:45.664Z",
+      "metrics": {
+        "totalEvents": 14,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 87633
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "14 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T19-41-59-019c2f53-6159-7f21-9a76-13905f5c2e0c",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T19-41-59-019c2f53-6159-7f21-9a76-13905f5c2e0c.jsonl",
+      "timestamp": "2026-02-15T14:02:45.691Z",
+      "metrics": {
+        "totalEvents": 101,
+        "toolCalls": 11,
+        "toolBreakdown": {
+          "mcp__RepoPrompt__manage_workspaces": 1,
+          "mcp__RepoPrompt__list_models": 1,
+          "mcp__RepoPrompt__workspace_context": 1,
+          "mcp__RepoPrompt__get_file_tree": 1,
+          "mcp__RepoPrompt__read_file": 3,
+          "mcp__RepoPrompt__manage_selection": 1,
+          "mcp__RepoPrompt__chat_send": 3
+        },
+        "errors": 0,
+        "userMessages": 4,
+        "assistantMessages": 4,
+        "reasoningEvents": 10,
+        "duration": 8165955
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "101 events, 11 tool calls, 10 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T19-39-52-019c2f51-7152-72b0-84a3-2011abc486cb",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T19-39-52-019c2f51-7152-72b0-84a3-2011abc486cb.jsonl",
+      "timestamp": "2026-02-15T14:02:45.693Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 6306
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-05T19-33-37-019c2f4b-b6af-7f03-abce-9fd5d827d653",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T19-33-37-019c2f4b-b6af-7f03-abce-9fd5d827d653.jsonl",
+      "timestamp": "2026-02-15T14:02:45.762Z",
+      "metrics": {
+        "totalEvents": 27,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 2,
+        "duration": 409278
+      },
+      "score": 95,
+      "grade": "A",
+      "summary": "27 events, 0 tool calls, 2 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T19-31-10-019c2f49-7a1c-7ea0-be69-3f113caff4e3",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T19-31-10-019c2f49-7a1c-7ea0-be69-3f113caff4e3.jsonl",
+      "timestamp": "2026-02-15T14:02:45.770Z",
+      "metrics": {
+        "totalEvents": 51,
+        "toolCalls": 6,
+        "toolBreakdown": {
+          "mcp__RepoPrompt__workspace_context": 2,
+          "mcp__RepoPrompt__manage_selection": 2,
+          "mcp__RepoPrompt__prompt": 1,
+          "mcp__RepoPrompt__ask_user": 1
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 6,
+        "duration": 144786
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "51 events, 6 tool calls, 6 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T19-19-02-019c2f3e-5d9e-7960-8c0d-d8f3942148ea",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T19-19-02-019c2f3e-5d9e-7960-8c0d-d8f3942148ea.jsonl",
+      "timestamp": "2026-02-15T14:02:45.780Z",
+      "metrics": {
+        "totalEvents": 38,
+        "toolCalls": 2,
+        "toolBreakdown": {
+          "exec_command": 2
+        },
+        "errors": 0,
+        "userMessages": 5,
+        "assistantMessages": 4,
+        "reasoningEvents": 3,
+        "duration": 165449
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "38 events, 2 tool calls, 3 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T18-59-12-019c2f2c-3489-7071-95a8-70e3494331af",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T18-59-12-019c2f2c-3489-7071-95a8-70e3494331af.jsonl",
+      "timestamp": "2026-02-15T14:02:45.911Z",
+      "metrics": {
+        "totalEvents": 1933,
+        "toolCalls": 242,
+        "toolBreakdown": {
+          "exec_command": 156,
+          "write_stdin": 86
+        },
+        "errors": 0,
+        "userMessages": 11,
+        "assistantMessages": 11,
+        "reasoningEvents": 208,
+        "duration": 25649155
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "1933 events, 242 tool calls, 208 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T18-58-25-019c2f2b-7e69-7d70-83b6-9877dcbfec64",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T18-58-25-019c2f2b-7e69-7d70-83b6-9877dcbfec64.jsonl",
+      "timestamp": "2026-02-15T14:02:45.915Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 9606
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-05T14-54-25-019c2e4c-1984-7a42-9d47-eefa29ca6be5",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T14-54-25-019c2e4c-1984-7a42-9d47-eefa29ca6be5.jsonl",
+      "timestamp": "2026-02-15T14:02:45.999Z",
+      "metrics": {
+        "totalEvents": 1188,
+        "toolCalls": 131,
+        "toolBreakdown": {
+          "exec_command": 110,
+          "write_stdin": 21
+        },
+        "errors": 0,
+        "userMessages": 20,
+        "assistantMessages": 15,
+        "reasoningEvents": 146,
+        "duration": 16470643
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "1188 events, 131 tool calls, 146 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T14-45-36-019c2e44-083f-7622-a124-a97984e32b01",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T14-45-36-019c2e44-083f-7622-a124-a97984e32b01.jsonl",
+      "timestamp": "2026-02-15T14:02:46.010Z",
+      "metrics": {
+        "totalEvents": 167,
+        "toolCalls": 20,
+        "toolBreakdown": {
+          "exec_command": 20
+        },
+        "errors": 0,
+        "userMessages": 5,
+        "assistantMessages": 4,
+        "reasoningEvents": 22,
+        "duration": 181744
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "167 events, 20 tool calls, 22 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T14-42-45-019c2e41-6ad3-7570-b5d0-7b9edb5c6c4c",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T14-42-45-019c2e41-6ad3-7570-b5d0-7b9edb5c6c4c.jsonl",
+      "timestamp": "2026-02-15T14:02:46.014Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 1079
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-05T14-41-26-019c2e40-3999-7ee0-b17f-aaa332f520cf",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T14-41-26-019c2e40-3999-7ee0-b17f-aaa332f520cf.jsonl",
+      "timestamp": "2026-02-15T14:02:46.019Z",
+      "metrics": {
+        "totalEvents": 56,
+        "toolCalls": 6,
+        "toolBreakdown": {
+          "exec_command": 6
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 3,
+        "reasoningEvents": 7,
+        "duration": 55020
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "56 events, 6 tool calls, 7 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T14-40-44-019c2e3f-93ab-7ee2-97c5-bd36c8171cf8",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T14-40-44-019c2e3f-93ab-7ee2-97c5-bd36c8171cf8.jsonl",
+      "timestamp": "2026-02-15T14:02:46.021Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 1610
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-05T14-15-14-019c2e28-3a4c-72b0-a657-ab59392f0b9e",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T14-15-14-019c2e28-3a4c-72b0-a657-ab59392f0b9e.jsonl",
+      "timestamp": "2026-02-15T14:02:46.029Z",
+      "metrics": {
+        "totalEvents": 17,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 133780
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "17 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T14-07-58-019c2e21-9579-75c0-aacc-01eb739666a1",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T14-07-58-019c2e21-9579-75c0-aacc-01eb739666a1.jsonl",
+      "timestamp": "2026-02-15T14:02:46.043Z",
+      "metrics": {
+        "totalEvents": 180,
+        "toolCalls": 24,
+        "toolBreakdown": {
+          "mcp__RepoPrompt__workspace_context": 2,
+          "mcp__RepoPrompt__ask_user": 2,
+          "mcp__RepoPrompt__get_file_tree": 2,
+          "mcp__RepoPrompt__file_search": 2,
+          "mcp__RepoPrompt__read_file": 14,
+          "mcp__RepoPrompt__manage_selection": 1,
+          "mcp__RepoPrompt__prompt": 1
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 25,
+        "duration": 431332
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "180 events, 24 tool calls, 25 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T13-58-05-019c2e18-88ec-7972-97c5-30c12e4e492c",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T13-58-05-019c2e18-88ec-7972-97c5-30c12e4e492c.jsonl",
+      "timestamp": "2026-02-15T14:02:46.092Z",
+      "metrics": {
+        "totalEvents": 695,
+        "toolCalls": 81,
+        "toolBreakdown": {
+          "exec_command": 72,
+          "write_stdin": 9
+        },
+        "errors": 0,
+        "userMessages": 22,
+        "assistantMessages": 19,
+        "reasoningEvents": 64,
+        "duration": 1964133
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "695 events, 81 tool calls, 64 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T12-56-49-019c2de0-709c-77b1-8f5a-3654b0dab9df",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T12-56-49-019c2de0-709c-77b1-8f5a-3654b0dab9df.jsonl",
+      "timestamp": "2026-02-15T14:02:46.096Z",
+      "metrics": {
+        "totalEvents": 14,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 69296
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "14 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T12-51-43-019c2ddb-c6e5-7f91-a253-3de271c6993c",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T12-51-43-019c2ddb-c6e5-7f91-a253-3de271c6993c.jsonl",
+      "timestamp": "2026-02-15T14:02:46.184Z",
+      "metrics": {
+        "totalEvents": 10,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 4,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 6510
+      },
+      "score": 85,
+      "grade": "B",
+      "summary": "10 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-05T12-47-35-019c2dd7-fd4f-7ff2-a319-401d3db006de",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T12-47-35-019c2dd7-fd4f-7ff2-a319-401d3db006de.jsonl",
+      "timestamp": "2026-02-15T14:02:46.269Z",
+      "metrics": {
+        "totalEvents": 10,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 4,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 6504
+      },
+      "score": 85,
+      "grade": "B",
+      "summary": "10 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-05T12-46-24-019c2dd6-e843-7310-8e4d-c7cd885a799a",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T12-46-24-019c2dd6-e843-7310-8e4d-c7cd885a799a.jsonl",
+      "timestamp": "2026-02-15T14:02:46.354Z",
+      "metrics": {
+        "totalEvents": 10,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 4,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 9053
+      },
+      "score": 85,
+      "grade": "B",
+      "summary": "10 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-05T10-03-34-019c2d41-d1b5-7fb3-9486-0b3a6af0beeb",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T10-03-34-019c2d41-d1b5-7fb3-9486-0b3a6af0beeb.jsonl",
+      "timestamp": "2026-02-15T14:02:46.357Z",
+      "metrics": {
+        "totalEvents": 13,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 81929
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "13 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T09-55-47-019c2d3a-b206-7573-a22a-5aef7a98ed96",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T09-55-47-019c2d3a-b206-7573-a22a-5aef7a98ed96.jsonl",
+      "timestamp": "2026-02-15T14:02:46.362Z",
+      "metrics": {
+        "totalEvents": 71,
+        "toolCalls": 8,
+        "toolBreakdown": {
+          "exec_command": 8
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 9,
+        "duration": 135065
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "71 events, 8 tool calls, 9 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T09-55-45-019c2d3a-a9cc-79c3-8d36-91a24bd0d613",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T09-55-45-019c2d3a-a9cc-79c3-8d36-91a24bd0d613.jsonl",
+      "timestamp": "2026-02-15T14:02:46.377Z",
+      "metrics": {
+        "totalEvents": 159,
+        "toolCalls": 20,
+        "toolBreakdown": {
+          "exec_command": 20
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 21,
+        "duration": 268963
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "159 events, 20 tool calls, 21 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T09-55-43-019c2d3a-a2cb-7aa3-8271-3a814d9aae1f",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T09-55-43-019c2d3a-a2cb-7aa3-8271-3a814d9aae1f.jsonl",
+      "timestamp": "2026-02-15T14:02:46.396Z",
+      "metrics": {
+        "totalEvents": 197,
+        "toolCalls": 30,
+        "toolBreakdown": {
+          "exec_command": 15,
+          "write_stdin": 15
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 16,
+        "duration": 237251
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "197 events, 30 tool calls, 16 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T09-55-41-019c2d3a-9baf-7c82-b235-5d837d8420dd",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T09-55-41-019c2d3a-9baf-7c82-b235-5d837d8420dd.jsonl",
+      "timestamp": "2026-02-15T14:02:46.448Z",
+      "metrics": {
+        "totalEvents": 363,
+        "toolCalls": 45,
+        "toolBreakdown": {
+          "exec_command": 45
+        },
+        "errors": 0,
+        "userMessages": 5,
+        "assistantMessages": 2,
+        "reasoningEvents": 54,
+        "duration": 418795
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "363 events, 45 tool calls, 54 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T03-32-52-019c2bdc-2155-7fa2-ae93-0ee0eb5a8cc6",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T03-32-52-019c2bdc-2155-7fa2-ae93-0ee0eb5a8cc6.jsonl",
+      "timestamp": "2026-02-15T14:02:46.642Z",
+      "metrics": {
+        "totalEvents": 3257,
+        "toolCalls": 422,
+        "toolBreakdown": {
+          "exec_command": 202,
+          "mcp__filesystem__write_file": 2,
+          "mcp__filesystem__edit_file": 4,
+          "write_stdin": 193,
+          "spawn_agent": 5,
+          "wait": 15,
+          "send_input": 1
+        },
+        "errors": 0,
+        "userMessages": 43,
+        "assistantMessages": 42,
+        "reasoningEvents": 354,
+        "duration": 36646421
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "3257 events, 422 tool calls, 354 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T03-27-48-019c2bd7-7e0a-74d0-b1b9-50466f0991b8",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T03-27-48-019c2bd7-7e0a-74d0-b1b9-50466f0991b8.jsonl",
+      "timestamp": "2026-02-15T14:02:46.646Z",
+      "metrics": {
+        "totalEvents": 57,
+        "toolCalls": 6,
+        "toolBreakdown": {
+          "exec_command": 6
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 3,
+        "reasoningEvents": 7,
+        "duration": 222777
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "57 events, 6 tool calls, 7 reasoning"
+    },
+    {
+      "sessionId": "2026-02-05T03-25-56-019c2bd5-c700-7d51-a38f-c863e0ef9d2b",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/05/rollout-2026-02-05T03-25-56-019c2bd5-c700-7d51-a38f-c863e0ef9d2b.jsonl",
+      "timestamp": "2026-02-15T14:02:46.648Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 1321
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-07T15-57-11-019c38d2-482e-76f0-9db4-79ff0868127d",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/07/rollout-2026-02-07T15-57-11-019c38d2-482e-76f0-9db4-79ff0868127d.jsonl",
+      "timestamp": "2026-02-15T14:02:46.657Z",
+      "metrics": {
+        "totalEvents": 119,
+        "toolCalls": 12,
+        "toolBreakdown": {
+          "exec_command": 12
+        },
+        "errors": 0,
+        "userMessages": 5,
+        "assistantMessages": 5,
+        "reasoningEvents": 13,
+        "duration": 475821
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "119 events, 12 tool calls, 13 reasoning"
+    },
+    {
+      "sessionId": "2026-02-07T15-55-26-019c38d0-b059-7e22-8c83-32628e7e18d6",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/07/rollout-2026-02-07T15-55-26-019c38d0-b059-7e22-8c83-32628e7e18d6.jsonl",
+      "timestamp": "2026-02-15T14:02:46.660Z",
+      "metrics": {
+        "totalEvents": 45,
+        "toolCalls": 3,
+        "toolBreakdown": {
+          "exec_command": 3
+        },
+        "errors": 0,
+        "userMessages": 4,
+        "assistantMessages": 4,
+        "reasoningEvents": 3,
+        "duration": 81370
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "45 events, 3 tool calls, 3 reasoning"
+    },
+    {
+      "sessionId": "2026-02-07T15-53-24-019c38ce-d3b4-7dc3-820e-8bafacb7602d",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/07/rollout-2026-02-07T15-53-24-019c38ce-d3b4-7dc3-820e-8bafacb7602d.jsonl",
+      "timestamp": "2026-02-15T14:02:46.664Z",
+      "metrics": {
+        "totalEvents": 49,
+        "toolCalls": 5,
+        "toolBreakdown": {
+          "exec_command": 5
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 3,
+        "reasoningEvents": 5,
+        "duration": 99616
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "49 events, 5 tool calls, 5 reasoning"
+    },
+    {
+      "sessionId": "2026-02-07T15-50-33-019c38cc-38ea-70d0-9f41-58ae8e94d1d6",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/07/rollout-2026-02-07T15-50-33-019c38cc-38ea-70d0-9f41-58ae8e94d1d6.jsonl",
+      "timestamp": "2026-02-15T14:02:46.675Z",
+      "metrics": {
+        "totalEvents": 127,
+        "toolCalls": 16,
+        "toolBreakdown": {
+          "exec_command": 16
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 3,
+        "reasoningEvents": 16,
+        "duration": 130095
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "127 events, 16 tool calls, 16 reasoning"
+    },
+    {
+      "sessionId": "2026-02-07T03-55-23-019c363d-748b-7142-82e7-b106ae0f2fa9",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/07/rollout-2026-02-07T03-55-23-019c363d-748b-7142-82e7-b106ae0f2fa9.jsonl",
+      "timestamp": "2026-02-15T14:02:46.777Z",
+      "metrics": {
+        "totalEvents": 1721,
+        "toolCalls": 169,
+        "toolBreakdown": {
+          "exec_command": 149,
+          "request_user_input": 4,
+          "write_stdin": 16
+        },
+        "errors": 0,
+        "userMessages": 20,
+        "assistantMessages": 18,
+        "reasoningEvents": 154,
+        "duration": 42970036
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "1721 events, 169 tool calls, 154 reasoning"
+    },
+    {
+      "sessionId": "2026-02-07T01-34-47-019c35bc-bcea-7de3-bab4-52933fb74888",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/07/rollout-2026-02-07T01-34-47-019c35bc-bcea-7de3-bab4-52933fb74888.jsonl",
+      "timestamp": "2026-02-15T14:02:46.894Z",
+      "metrics": {
+        "totalEvents": 1884,
+        "toolCalls": 258,
+        "toolBreakdown": {
+          "exec_command": 199,
+          "write_stdin": 59
+        },
+        "errors": 0,
+        "userMessages": 26,
+        "assistantMessages": 25,
+        "reasoningEvents": 142,
+        "duration": 8320219
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "1884 events, 258 tool calls, 142 reasoning"
+    },
+    {
+      "sessionId": "2026-02-07T01-27-37-019c35b6-2ba5-79a1-a390-9363dce5fc94",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/07/rollout-2026-02-07T01-27-37-019c35b6-2ba5-79a1-a390-9363dce5fc94.jsonl",
+      "timestamp": "2026-02-15T14:02:46.910Z",
+      "metrics": {
+        "totalEvents": 284,
+        "toolCalls": 45,
+        "toolBreakdown": {
+          "exec_command": 22,
+          "write_stdin": 23
+        },
+        "errors": 0,
+        "userMessages": 5,
+        "assistantMessages": 3,
+        "reasoningEvents": 21,
+        "duration": 303598
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "284 events, 45 tool calls, 21 reasoning"
+    },
+    {
+      "sessionId": "2026-02-07T01-26-58-019c35b5-95c5-7bf0-9914-2cbe68ec0b2f",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/07/rollout-2026-02-07T01-26-58-019c35b5-95c5-7bf0-9914-2cbe68ec0b2f.jsonl",
+      "timestamp": "2026-02-15T14:02:46.912Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 915
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-01T20-45-26-019c1af4-067b-7e73-a99c-27f3cfd798c5",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/01/rollout-2026-02-01T20-45-26-019c1af4-067b-7e73-a99c-27f3cfd798c5.jsonl",
+      "timestamp": "2026-02-15T14:02:46.914Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 844
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-01T20-35-27-019c1aea-e2bc-73a1-ab29-9abe66960c70",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/01/rollout-2026-02-01T20-35-27-019c1aea-e2bc-73a1-ab29-9abe66960c70.jsonl",
+      "timestamp": "2026-02-15T14:02:46.919Z",
+      "metrics": {
+        "totalEvents": 222,
+        "toolCalls": 22,
+        "toolBreakdown": {
+          "exec_command": 14,
+          "write_stdin": 8
+        },
+        "errors": 0,
+        "userMessages": 10,
+        "assistantMessages": 10,
+        "reasoningEvents": 25,
+        "duration": 574243
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "222 events, 22 tool calls, 25 reasoning"
+    },
+    {
+      "sessionId": "2026-02-01T20-34-24-019c1ae9-ef8b-7152-a1e1-563fd707c9c6",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/01/rollout-2026-02-01T20-34-24-019c1ae9-ef8b-7152-a1e1-563fd707c9c6.jsonl",
+      "timestamp": "2026-02-15T14:02:46.926Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 615
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-01T20-32-16-019c1ae7-f941-7c80-88e6-b1895d1eefd5",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/01/rollout-2026-02-01T20-32-16-019c1ae7-f941-7c80-88e6-b1895d1eefd5.jsonl",
+      "timestamp": "2026-02-15T14:02:46.932Z",
+      "metrics": {
+        "totalEvents": 50,
+        "toolCalls": 4,
+        "toolBreakdown": {
+          "exec_command": 4
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 3,
+        "reasoningEvents": 6,
+        "duration": 100593
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "50 events, 4 tool calls, 6 reasoning"
+    },
+    {
+      "sessionId": "2026-02-01T20-04-38-019c1ace-afcd-7272-907a-5895584bf91a",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/01/rollout-2026-02-01T20-04-38-019c1ace-afcd-7272-907a-5895584bf91a.jsonl",
+      "timestamp": "2026-02-15T14:02:46.939Z",
+      "metrics": {
+        "totalEvents": 367,
+        "toolCalls": 43,
+        "toolBreakdown": {
+          "exec_command": 33,
+          "write_stdin": 10
+        },
+        "errors": 0,
+        "userMessages": 10,
+        "assistantMessages": 8,
+        "reasoningEvents": 44,
+        "duration": 1637039
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "367 events, 43 tool calls, 44 reasoning"
+    },
+    {
+      "sessionId": "2026-02-01T19-42-16-019c1aba-342a-7111-a7b0-c4aace00469b",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/01/rollout-2026-02-01T19-42-16-019c1aba-342a-7111-a7b0-c4aace00469b.jsonl",
+      "timestamp": "2026-02-15T14:02:46.947Z",
+      "metrics": {
+        "totalEvents": 398,
+        "toolCalls": 43,
+        "toolBreakdown": {
+          "exec_command": 20,
+          "write_stdin": 23
+        },
+        "errors": 0,
+        "userMessages": 8,
+        "assistantMessages": 6,
+        "reasoningEvents": 54,
+        "duration": 1339118
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "398 events, 43 tool calls, 54 reasoning"
+    },
+    {
+      "sessionId": "2026-02-01T19-29-59-019c1aae-f522-7442-b3c0-3906bdbbc583",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/01/rollout-2026-02-01T19-29-59-019c1aae-f522-7442-b3c0-3906bdbbc583.jsonl",
+      "timestamp": "2026-02-15T14:02:46.948Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 1302
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-01T17-03-55-019c1a29-3b6b-7703-b172-29f51632ae56",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/01/rollout-2026-02-01T17-03-55-019c1a29-3b6b-7703-b172-29f51632ae56.jsonl",
+      "timestamp": "2026-02-15T14:02:46.970Z",
+      "metrics": {
+        "totalEvents": 1202,
+        "toolCalls": 108,
+        "toolBreakdown": {
+          "exec_command": 95,
+          "write_stdin": 13
+        },
+        "errors": 0,
+        "userMessages": 37,
+        "assistantMessages": 26,
+        "reasoningEvents": 130,
+        "duration": 7983029
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "1202 events, 108 tool calls, 130 reasoning"
+    },
+    {
+      "sessionId": "2026-02-01T16-49-25-019c1a1b-f3bf-70f3-82ee-664c2d749665",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/01/rollout-2026-02-01T16-49-25-019c1a1b-f3bf-70f3-82ee-664c2d749665.jsonl",
+      "timestamp": "2026-02-15T14:02:46.972Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 1
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-01T16-46-02-019c1a18-dc94-71c2-9a0c-95d621bbc135",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/01/rollout-2026-02-01T16-46-02-019c1a18-dc94-71c2-9a0c-95d621bbc135.jsonl",
+      "timestamp": "2026-02-15T14:02:46.974Z",
+      "metrics": {
+        "totalEvents": 2,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 1,
+        "assistantMessages": 0,
+        "reasoningEvents": 0,
+        "duration": 10035
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "2 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-04T21-23-28-019c2a89-ec8b-7823-a3e0-e2c3baabf35e",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/04/rollout-2026-02-04T21-23-28-019c2a89-ec8b-7823-a3e0-e2c3baabf35e.jsonl",
+      "timestamp": "2026-02-15T14:02:46.999Z",
+      "metrics": {
+        "totalEvents": 399,
+        "toolCalls": 45,
+        "toolBreakdown": {
+          "exec_command": 31,
+          "write_stdin": 4,
+          "mcp__RepoPrompt__apply_edits": 10
+        },
+        "errors": 0,
+        "userMessages": 16,
+        "assistantMessages": 15,
+        "reasoningEvents": 41,
+        "duration": 3196512
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "399 events, 45 tool calls, 41 reasoning"
+    },
+    {
+      "sessionId": "2026-02-04T20-23-21-019c2a52-e476-7fe3-b4aa-43160b025010",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/04/rollout-2026-02-04T20-23-21-019c2a52-e476-7fe3-b4aa-43160b025010.jsonl",
+      "timestamp": "2026-02-15T14:02:47.094Z",
+      "metrics": {
+        "totalEvents": 1474,
+        "toolCalls": 228,
+        "toolBreakdown": {
+          "exec_command": 90,
+          "write_stdin": 132,
+          "mcp__RepoPrompt__apply_edits": 1,
+          "mcp__filesystem__edit_file": 5
+        },
+        "errors": 0,
+        "userMessages": 17,
+        "assistantMessages": 15,
+        "reasoningEvents": 108,
+        "duration": 3775085
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "1474 events, 228 tool calls, 108 reasoning"
+    },
+    {
+      "sessionId": "2026-02-04T20-21-10-019c2a50-e63e-7163-963c-fd6351dfd3d0",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/04/rollout-2026-02-04T20-21-10-019c2a50-e63e-7163-963c-fd6351dfd3d0.jsonl",
+      "timestamp": "2026-02-15T14:02:47.097Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 1462
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2025-12-03T15-53-32-019ae4eb-3bb5-7642-ab62-e690693f066b",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2025/12/03/rollout-2025-12-03T15-53-32-019ae4eb-3bb5-7642-ab62-e690693f066b.jsonl",
+      "timestamp": "2026-02-15T14:02:47.100Z",
+      "metrics": {
+        "totalEvents": 11,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 1,
+        "duration": 3512
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "11 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2025-12-03T15-15-12-019ae4c8-21c4-7601-b8ac-b1ccc9f0568a",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2025/12/03/rollout-2025-12-03T15-15-12-019ae4c8-21c4-7601-b8ac-b1ccc9f0568a.jsonl",
+      "timestamp": "2026-02-15T14:02:47.104Z",
+      "metrics": {
+        "totalEvents": 202,
+        "toolCalls": 14,
+        "toolBreakdown": {
+          "shell_command": 14
+        },
+        "errors": 0,
+        "userMessages": 12,
+        "assistantMessages": 11,
+        "reasoningEvents": 19,
+        "duration": 1204832
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "202 events, 14 tool calls, 19 reasoning"
+    },
+    {
+      "sessionId": "2025-12-03T14-54-09-019ae4b4-dd5f-73b3-b8e9-dcc5c57ac0bc",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2025/12/03/rollout-2025-12-03T14-54-09-019ae4b4-dd5f-73b3-b8e9-dcc5c57ac0bc.jsonl",
+      "timestamp": "2026-02-15T14:02:47.109Z",
+      "metrics": {
+        "totalEvents": 76,
+        "toolCalls": 8,
+        "toolBreakdown": {
+          "shell_command": 6,
+          "update_plan": 2
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 10,
+        "duration": 419452
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "76 events, 8 tool calls, 10 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T23-57-05-019c3563-48d7-7c40-98dd-c595278c5573",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T23-57-05-019c3563-48d7-7c40-98dd-c595278c5573.jsonl",
+      "timestamp": "2026-02-15T14:02:47.291Z",
+      "metrics": {
+        "totalEvents": 2889,
+        "toolCalls": 367,
+        "toolBreakdown": {
+          "exec_command": 277,
+          "write_stdin": 87,
+          "request_user_input": 3
+        },
+        "errors": 0,
+        "userMessages": 26,
+        "assistantMessages": 30,
+        "reasoningEvents": 248,
+        "duration": 10312139
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "2889 events, 367 tool calls, 248 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T03-39-26-019c3108-8171-7a53-9607-19a869cd6b1a",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T03-39-26-019c3108-8171-7a53-9607-19a869cd6b1a.jsonl",
+      "timestamp": "2026-02-15T14:02:47.299Z",
+      "metrics": {
+        "totalEvents": 16,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 151408
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "16 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T03-29-10-019c30ff-1aab-7ea2-8ce0-212942c01568",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T03-29-10-019c30ff-1aab-7ea2-8ce0-212942c01568.jsonl",
+      "timestamp": "2026-02-15T14:02:47.309Z",
+      "metrics": {
+        "totalEvents": 16,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 127917
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "16 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T03-21-50-019c30f8-60da-7973-b2fc-dfdcfbd92411",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T03-21-50-019c30f8-60da-7973-b2fc-dfdcfbd92411.jsonl",
+      "timestamp": "2026-02-15T14:02:47.316Z",
+      "metrics": {
+        "totalEvents": 14,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 24648
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "14 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T03-20-17-019c30f6-f5dd-7931-a3a1-9f1c0faa569b",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T03-20-17-019c30f6-f5dd-7931-a3a1-9f1c0faa569b.jsonl",
+      "timestamp": "2026-02-15T14:02:47.329Z",
+      "metrics": {
+        "totalEvents": 14,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 19353
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "14 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T03-19-15-019c30f6-0415-7fa1-ba24-52761991dcec",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T03-19-15-019c30f6-0415-7fa1-ba24-52761991dcec.jsonl",
+      "timestamp": "2026-02-15T14:02:47.335Z",
+      "metrics": {
+        "totalEvents": 13,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 11944
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "13 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T03-17-53-019c30f4-c42f-7a71-8e14-b10fe563a5ee",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T03-17-53-019c30f4-c42f-7a71-8e14-b10fe563a5ee.jsonl",
+      "timestamp": "2026-02-15T14:02:47.344Z",
+      "metrics": {
+        "totalEvents": 11,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 0,
+        "duration": 11279
+      },
+      "score": 85,
+      "grade": "B",
+      "summary": "11 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-06T03-12-58-019c30f0-4438-75d1-8104-19d31e5b157d",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T03-12-58-019c30f0-4438-75d1-8104-19d31e5b157d.jsonl",
+      "timestamp": "2026-02-15T14:02:47.350Z",
+      "metrics": {
+        "totalEvents": 15,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 63562
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "15 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T02-58-16-019c30e2-cfe7-75c3-bd5f-754eea9fc3d3",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-58-16-019c30e2-cfe7-75c3-bd5f-754eea9fc3d3.jsonl",
+      "timestamp": "2026-02-15T14:02:47.362Z",
+      "metrics": {
+        "totalEvents": 14,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 14723
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "14 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T02-55-01-019c30df-d459-76d0-9e35-77f6fe0809ea",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-55-01-019c30df-d459-76d0-9e35-77f6fe0809ea.jsonl",
+      "timestamp": "2026-02-15T14:02:47.370Z",
+      "metrics": {
+        "totalEvents": 16,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 91524
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "16 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T02-45-18-019c30d6-efda-7602-81b9-68bdc98230c0",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-45-18-019c30d6-efda-7602-81b9-68bdc98230c0.jsonl",
+      "timestamp": "2026-02-15T14:02:47.380Z",
+      "metrics": {
+        "totalEvents": 11,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 0,
+        "duration": 9550
+      },
+      "score": 85,
+      "grade": "B",
+      "summary": "11 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-06T02-40-50-019c30d2-d90b-7720-807e-3062f1db955a",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-40-50-019c30d2-d90b-7720-807e-3062f1db955a.jsonl",
+      "timestamp": "2026-02-15T14:02:47.389Z",
+      "metrics": {
+        "totalEvents": 16,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 147103
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "16 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T02-36-24-019c30ce-cc17-71c3-973a-e6a5e7d1c9c8",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-36-24-019c30ce-cc17-71c3-973a-e6a5e7d1c9c8.jsonl",
+      "timestamp": "2026-02-15T14:02:47.397Z",
+      "metrics": {
+        "totalEvents": 15,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 59715
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "15 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T02-30-40-019c30c9-8b6e-76a0-9141-66759f54cdb9",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-30-40-019c30c9-8b6e-76a0-9141-66759f54cdb9.jsonl",
+      "timestamp": "2026-02-15T14:02:47.404Z",
+      "metrics": {
+        "totalEvents": 16,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 115430
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "16 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T02-20-09-019c30bf-e96c-78d1-ae6d-152e533370e5",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-20-09-019c30bf-e96c-78d1-ae6d-152e533370e5.jsonl",
+      "timestamp": "2026-02-15T14:02:47.412Z",
+      "metrics": {
+        "totalEvents": 15,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 93101
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "15 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T02-18-12-019c30be-21ce-7a81-96d9-2adb3fe1ba47",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-18-12-019c30be-21ce-7a81-96d9-2adb3fe1ba47.jsonl",
+      "timestamp": "2026-02-15T14:02:47.417Z",
+      "metrics": {
+        "totalEvents": 15,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 96328
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "15 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T02-13-14-019c30b9-951c-7ac1-b38f-02347d308f7d",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-13-14-019c30b9-951c-7ac1-b38f-02347d308f7d.jsonl",
+      "timestamp": "2026-02-15T14:02:47.420Z",
+      "metrics": {
+        "totalEvents": 4,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 0,
+        "duration": 136
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "4 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2026-02-06T02-09-02-019c30b5-bc3f-74a0-807a-39dcda222dc8",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-09-02-019c30b5-bc3f-74a0-807a-39dcda222dc8.jsonl",
+      "timestamp": "2026-02-15T14:02:47.427Z",
+      "metrics": {
+        "totalEvents": 13,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 1,
+        "duration": 65335
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "13 events, 0 tool calls, 1 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T02-07-57-019c30b4-bfaf-7c63-b76b-a170eb76174d",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-07-57-019c30b4-bfaf-7c63-b76b-a170eb76174d.jsonl",
+      "timestamp": "2026-02-15T14:02:47.544Z",
+      "metrics": {
+        "totalEvents": 1581,
+        "toolCalls": 166,
+        "toolBreakdown": {
+          "exec_command": 119,
+          "write_stdin": 42,
+          "request_user_input": 5
+        },
+        "errors": 0,
+        "userMessages": 31,
+        "assistantMessages": 28,
+        "reasoningEvents": 133,
+        "duration": 75813484
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "1581 events, 166 tool calls, 133 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T02-07-20-019c30b4-2e4e-7521-967d-d9a6fc8c9f6e",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T02-07-20-019c30b4-2e4e-7521-967d-d9a6fc8c9f6e.jsonl",
+      "timestamp": "2026-02-15T14:02:47.555Z",
+      "metrics": {
+        "totalEvents": 126,
+        "toolCalls": 16,
+        "toolBreakdown": {
+          "mcp__RepoPrompt__workspace_context": 2,
+          "mcp__RepoPrompt__file_search": 1,
+          "mcp__RepoPrompt__read_file": 8,
+          "mcp__RepoPrompt__get_file_tree": 2,
+          "mcp__RepoPrompt__manage_selection": 1,
+          "mcp__RepoPrompt__prompt": 1,
+          "mcp__RepoPrompt__ask_user": 1
+        },
+        "errors": 0,
+        "userMessages": 3,
+        "assistantMessages": 2,
+        "reasoningEvents": 17,
+        "duration": 94241
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "126 events, 16 tool calls, 17 reasoning"
+    },
+    {
+      "sessionId": "2026-02-06T01-42-11-019c309d-261f-7681-af29-dee7ae60a39a",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2026/02/06/rollout-2026-02-06T01-42-11-019c309d-261f-7681-af29-dee7ae60a39a.jsonl",
+      "timestamp": "2026-02-15T14:02:47.682Z",
+      "metrics": {
+        "totalEvents": 1840,
+        "toolCalls": 245,
+        "toolBreakdown": {
+          "exec_command": 105,
+          "write_stdin": 11,
+          "mcp__RepoPrompt__manage_workspaces": 2,
+          "mcp__RepoPrompt__list_models": 1,
+          "mcp__RepoPrompt__workspace_context": 1,
+          "mcp__RepoPrompt__chat_send": 15,
+          "mcp__RepoPrompt__git": 3,
+          "mcp__RepoPrompt__read_file": 57,
+          "mcp__RepoPrompt__file_search": 25,
+          "mcp__RepoPrompt__get_file_tree": 8,
+          "mcp__RepoPrompt__manage_selection": 9,
+          "mcp__RepoPrompt__chats": 2,
+          "mcp__RepoPrompt__apply_edits": 6
+        },
+        "errors": 0,
+        "userMessages": 19,
+        "assistantMessages": 15,
+        "reasoningEvents": 213,
+        "duration": 76584674
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "1840 events, 245 tool calls, 213 reasoning"
+    },
+    {
+      "sessionId": "2025-12-07T21-30-58-019afc3a-1c28-7381-acef-a982dfea7504",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2025/12/07/rollout-2025-12-07T21-30-58-019afc3a-1c28-7381-acef-a982dfea7504.jsonl",
+      "timestamp": "2026-02-15T14:02:47.686Z",
+      "metrics": {
+        "totalEvents": 3,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 0,
+        "reasoningEvents": 0,
+        "duration": 0
+      },
+      "score": 65,
+      "grade": "D",
+      "summary": "3 events, 0 tool calls"
+    },
+    {
+      "sessionId": "2025-12-07T21-22-12-019afc32-1791-7ad3-b456-53056a4b617d",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2025/12/07/rollout-2025-12-07T21-22-12-019afc32-1791-7ad3-b456-53056a4b617d.jsonl",
+      "timestamp": "2026-02-15T14:02:47.691Z",
+      "metrics": {
+        "totalEvents": 81,
+        "toolCalls": 3,
+        "toolBreakdown": {
+          "shell_command": 3
+        },
+        "errors": 0,
+        "userMessages": 7,
+        "assistantMessages": 5,
+        "reasoningEvents": 9,
+        "duration": 414729
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "81 events, 3 tool calls, 9 reasoning"
+    },
+    {
+      "sessionId": "2025-12-07T21-02-30-019afc20-0e31-71b2-b3c1-42203095f4ca",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2025/12/07/rollout-2025-12-07T21-02-30-019afc20-0e31-71b2-b3c1-42203095f4ca.jsonl",
+      "timestamp": "2026-02-15T14:02:47.700Z",
+      "metrics": {
+        "totalEvents": 198,
+        "toolCalls": 27,
+        "toolBreakdown": {
+          "mcp__RepoPrompt__workspace_context": 3,
+          "mcp__RepoPrompt__file_search": 1,
+          "mcp__RepoPrompt__read_file": 13,
+          "mcp__RepoPrompt__get_code_structure": 1,
+          "mcp__RepoPrompt__manage_selection": 7,
+          "mcp__RepoPrompt__prompt": 2
+        },
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 28,
+        "duration": 282776
+      },
+      "score": 100,
+      "grade": "A",
+      "summary": "198 events, 27 tool calls, 28 reasoning"
+    },
+    {
+      "sessionId": "2025-12-07T20-58-53-019afc1c-bde1-74c1-943a-7daa724a9138",
+      "filePath": "/Users/jamiecraik/.codex/sessions/2025/12/07/rollout-2025-12-07T20-58-53-019afc1c-bde1-74c1-943a-7daa724a9138.jsonl",
+      "timestamp": "2026-02-15T14:02:47.703Z",
+      "metrics": {
+        "totalEvents": 11,
+        "toolCalls": 0,
+        "toolBreakdown": {},
+        "errors": 0,
+        "userMessages": 2,
+        "assistantMessages": 1,
+        "reasoningEvents": 1,
+        "duration": 8029
+      },
+      "score": 90,
+      "grade": "A",
+      "summary": "11 events, 0 tool calls, 1 reasoning"
+    }
+  ]
+}
