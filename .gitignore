@@ -22,3 +22,5 @@ build/
 # Tauri / Rust
 src-tauri/target/
 
+
+FORJAMIE.md
