@@ -24,3 +24,6 @@ src-tauri/target/
 
 
 FORJAMIE.md
+
+# Tauri generated
+src-tauri/gen/
