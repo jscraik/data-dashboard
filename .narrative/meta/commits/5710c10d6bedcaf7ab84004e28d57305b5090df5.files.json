@@ -1,0 +1,250 @@
+{
+  "sha": "5710c10d6bedcaf7ab84004e28d57305b5090df5",
+  "totals": {
+    "added": 16097,
+    "removed": 0,
+    "files": 48
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "additions": 24,
+      "deletions": 0
+    },
+    {
+      "path": "BUILD_SUMMARY.md",
+      "additions": 65,
+      "deletions": 0
+    },
+    {
+      "path": "GOLD_BUILD_PROGRESS.md",
+      "additions": 75,
+      "deletions": 0
+    },
+    {
+      "path": "PROGRESS_PROTOCOL.md",
+      "additions": 29,
+      "deletions": 0
+    },
+    {
+      "path": "README.md",
+      "additions": 69,
+      "deletions": 0
+    },
+    {
+      "path": "SUBAGENT_A.md",
+      "additions": 23,
+      "deletions": 0
+    },
+    {
+      "path": "SUBAGENT_B.md",
+      "additions": 23,
+      "deletions": 0
+    },
+    {
+      "path": "SUBAGENT_C.md",
+      "additions": 23,
+      "deletions": 0
+    },
+    {
+      "path": "SUBAGENT_D.md",
+      "additions": 23,
+      "deletions": 0
+    },
+    {
+      "path": "biome.json",
+      "additions": 43,
+      "deletions": 0
+    },
+    {
+      "path": "index.html",
+      "additions": 16,
+      "deletions": 0
+    },
+    {
+      "path": "package.json",
+      "additions": 53,
+      "deletions": 0
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "additions": 3232,
+      "deletions": 0
+    },
+    {
+      "path": "session-scores.json",
+      "additions": 1877,
+      "deletions": 0
+    },
+    {
+      "path": "src-tauri/Cargo.lock",
+      "additions": 5917,
+      "deletions": 0
+    },
+    {
+      "path": "src-tauri/Cargo.toml",
+      "additions": 38,
+      "deletions": 0
+    },
+    {
+      "path": "src-tauri/src/bin/behavior-scorer.rs",
+      "additions": 128,
+      "deletions": 0
+    },
+    {
+      "path": "src-tauri/src/db.rs",
+      "additions": 969,
+      "deletions": 0
+    },
+    {
+      "path": "src-tauri/src/integration_tests.rs",
+      "additions": 157,
+      "deletions": 0
+    },
+    {
+      "path": "src-tauri/src/lib.rs",
+      "additions": 427,
+      "deletions": 0
+    },
+    {
+      "path": "src-tauri/src/main.rs",
+      "additions": 142,
+      "deletions": 0
+    },
+    {
+      "path": "src-tauri/src/performance.rs",
+      "additions": 94,
+      "deletions": 0
+    },
+    {
+      "path": "src-tauri/src/retry.rs",
+      "additions": 82,
+      "deletions": 0
+    },
+    {
+      "path": "src-tauri/tauri.conf.json",
+      "additions": 45,
+      "deletions": 0
+    },
+    {
+      "path": "src/App.tsx",
+      "additions": 83,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/Dashboard.test.tsx",
+      "additions": 48,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/Dashboard.tsx",
+      "additions": 248,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/RecentSessions.test.tsx",
+      "additions": 58,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/RecentSessions.tsx",
+      "additions": 89,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/RuleList.test.tsx",
+      "additions": 54,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/RuleList.tsx",
+      "additions": 83,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/ScoreCard.test.tsx",
+      "additions": 46,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/ScoreCard.tsx",
+      "additions": 79,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/SessionScorer.test.tsx",
+      "additions": 61,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/SessionScorer.tsx",
+      "additions": 170,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/Tabs.test.tsx",
+      "additions": 75,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/TrendChart.test.tsx",
+      "additions": 46,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/TrendChart.tsx",
+      "additions": 83,
+      "deletions": 0
+    },
+    {
+      "path": "src/components/ui/Tabs.tsx",
+      "additions": 131,
+      "deletions": 0
+    },
+    {
+      "path": "src/hooks/useOptimisticScore.ts",
+      "additions": 84,
+      "deletions": 0
+    },
+    {
+      "path": "src/lib/animations.ts",
+      "additions": 75,
+      "deletions": 0
+    },
+    {
+      "path": "src/main.tsx",
+      "additions": 10,
+      "deletions": 0
+    },
+    {
+      "path": "src/session-watcher.ts",
+      "additions": 376,
+      "deletions": 0
+    },
+    {
+      "path": "src/styles/globals.css",
+      "additions": 529,
+      "deletions": 0
+    },
+    {
+      "path": "src/test/setup.ts",
+      "additions": 12,
+      "deletions": 0
+    },
+    {
+      "path": "tsconfig.json",
+      "additions": 26,
+      "deletions": 0
+    },
+    {
+      "path": "tsconfig.node.json",
+      "additions": 10,
+      "deletions": 0
+    },
+    {
+      "path": "vite.config.ts",
+      "additions": 47,
+      "deletions": 0
+    }
+  ]
+}

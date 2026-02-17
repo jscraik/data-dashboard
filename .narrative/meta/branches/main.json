@@ -1,0 +1,17 @@
+{
+  "repoRoot": "/Users/jamiecraik/dev/data-dashboard",
+  "branch": "main",
+  "headSha": "5710c10d6bedcaf7ab84004e28d57305b5090df5",
+  "indexedAtISO": "2026-02-16T20:42:06.786Z",
+  "stats": {
+    "added": 16097,
+    "removed": 0,
+    "files": 48,
+    "commits": 1,
+    "prompts": 0,
+    "responses": 0
+  },
+  "commits": [
+    "5710c10d6bedcaf7ab84004e28d57305b5090df5"
+  ]
+}
